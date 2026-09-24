@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bloom by RKH — a flower in your hands</title><meta name="author" content="RKH"><meta name="description" content="Open your hand. Let a flower bloom. A private, local webcam experiment."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23140f19'/%3E%3Ctext x='5' y='25' font-size='27' fill='%23ebbdcb'%3E✳%3C/text%3E%3C/svg%3E"><style>
+:root{color-scheme:dark;--fg:#f5e9ed;--muted:#b9a9b5;--line:#ffffff20;--pink:#e6afc6}*{box-sizing:border-box}body{margin:0;color:var(--fg);background:#100d15;font:16px/1.5 system-ui,-apple-system,sans-serif}button,input,summary{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--pink);outline-offset:5px}header{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:26px 5vw;border-bottom:1px solid var(--line)}.brand{font:italic 29px Georgia,serif;letter-spacing:-1px}.brand span{color:var(--pink);margin-right:9px;font-style:normal}.edition{font-size:11px;letter-spacing:2px;color:var(--muted)}main{max-width:1500px;margin:auto;display:grid;grid-template-columns:350px minmax(0,1fr);min-height:650px;padding:0 5vw;gap:15px}.intro{position:relative;z-index:1;align-self:center;padding:45px 0}.eyebrow{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--pink);margin:0 0 22px}h1{font:normal clamp(42px,5vw,68px)/1.06 Georgia,serif;letter-spacing:-2.5px;margin:0 0 25px}h1 em{font-weight:normal;color:var(--pink)}.description{max-width:285px;color:var(--muted);font-size:16px;line-height:1.75;margin-bottom:28px}.primary{background:var(--fg);color:#241821;border:0;border-radius:40px;padding:14px 24px;font-weight:600;font-size:14px;min-height:48px}.primary:hover{background:var(--pink)}.privacy{color:var(--muted);font-size:12px;margin-top:12px;max-width:290px}.manual{border-top:1px solid var(--line);padding-top:22px;margin-top:30px;max-width:280px}.manual label{display:flex;justify-content:space-between;font-size:13px}.manual input{width:100%;accent-color:var(--pink);margin:14px 0 5px;min-height:28px}.endpoints{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);letter-spacing:1px}.stage{position:relative;min-width:0;min-height:620px;isolation:isolate;background:radial-gradient(ellipse at 50% 48%,#30203666,transparent 64%)}#flower{width:100%;height:100%;position:absolute;inset:0}.stage-top{position:absolute;top:30px;left:25px;right:0;display:flex;justify-content:space-between;gap:10px;z-index:1;color:var(--muted);font-size:11px;letter-spacing:1.5px}.status{display:flex;align-items:center;gap:8px;letter-spacing:0;font-size:12px}.dot{width:6px;height:6px;border-radius:50%;background:#aa889e}.dot.on{background:#a9d8ba;box-shadow:0 0 12px #a9d8ba66}.stage-bottom{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:var(--muted);font-size:12px;letter-spacing:.4px}.preview{position:absolute;right:12px;bottom:60px;width:160px;aspect-ratio:4/3;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#201725}.preview video,.preview canvas{width:100%;height:100%;object-fit:fill;position:absolute;transform:scaleX(-1)}.preview[hidden]{display:none}.preview-toggle{margin:10px 0;background:none;color:var(--muted);border:0;padding:8px 0;font-size:12px;display:block}.preview-toggle[hidden]{display:none}#message{color:var(--pink);font-size:13px;max-width:300px;margin:12px 0 0;min-height:20px}footer{max-width:1500px;margin:auto;padding:24px 5vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:30px;align-items:flex-start;color:var(--muted);font-size:12px}footer>span{white-space:nowrap}details{max-width:570px}summary{cursor:pointer;color:var(--fg)}details p{margin:12px 0}a{color:var(--pink)}@media(min-width:1500px){main{min-height:760px}}@media(max-width:900px){main{grid-template-columns:280px minmax(0,1fr);padding:0 4vw}h1{font-size:48px}.stage-top{left:8px}.stage-top>span:first-child{display:none}}@media(max-width:650px){header{padding:18px 6vw}.edition{font-size:10px;letter-spacing:1px}main{display:flex;flex-direction:column;padding:0 6vw;gap:0}.intro{padding:28px 0 0;align-self:stretch}h1{font-size:42px;letter-spacing:-1.5px;margin-bottom:12px}.eyebrow{margin-bottom:12px}.description{max-width:none;margin:0 0 18px;font-size:14px}.manual{max-width:none;margin-top:20px;padding-top:16px}.privacy{max-width:none}.stage{order:2;min-height:430px;margin-top:12px}.stage-top{top:12px}.stage-bottom{bottom:5px}.preview{width:110px;right:0;bottom:32px}footer{padding:22px 6vw;flex-direction:column;gap:12px}.intro h1 br{display:none}.intro h1 em{white-space:nowrap}}
+
+header{border:0;padding:20px 5vw}.brand{font-size:34px}main{grid-template-columns:340px minmax(0,1fr);min-height:680px}.stage{min-height:680px}.description{font-size:18px}.primary{font-size:18px;padding:16px 28px}.privacy{font-size:15px}.manual label,.preview-toggle,.status,#message,footer,details{font-size:16px}.endpoints{font-size:14px;letter-spacing:0}.stage-top{justify-content:flex-end}.stage-bottom{display:none}#message:empty{display:none}.intro{padding:25px 0}.manual{margin-top:24px}footer{border:0;padding-top:0}details{max-width:640px}.preview-toggle{padding:10px 0}h1{font-size:54px}#message{max-width:340px} .drawing-error{color:var(--pink)}
+@media(max-width:900px){main{grid-template-columns:300px minmax(0,1fr)}h1{font-size:46px}}
+@media(max-width:650px){main{display:flex;flex-direction:column;min-height:0}.stage{min-height:440px}.intro{padding:12px 0 0}h1{font-size:38px}.privacy{margin:8px 0}.description{font-size:17px}.manual{margin-top:16px;padding-top:12px}.stage-top{top:8px}footer{padding-top:20px}}
+
+/* Large camera view beside the flower, with no overlap. */
+.preview{position:relative;inset:auto;width:100%;max-width:420px;aspect-ratio:4/3;margin:20px 0 0;border-radius:16px}
+@media(max-width:650px){.preview{position:relative;inset:auto;width:100%;max-width:420px;margin:18px auto 0}}
+.creator-credit{font-size:16px;letter-spacing:.08em;color:var(--pink)}
+
+.save-postcard{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:#251b2b;color:var(--fg);border:1px solid #e6afc655;border-radius:30px;padding:12px 22px;font-size:16px;white-space:nowrap;min-height:48px}.save-postcard:hover{background:#38273d}.save-postcard:disabled{opacity:.65;cursor:wait}.save-status{position:absolute;bottom:68px;left:0;right:0;text-align:center;font-size:14px;color:var(--muted)}
+
+.flower-options{display:flex;gap:14px;margin:24px 0 0}.flower-options label{flex:1;font-size:16px}.flower-options select,.flower-options button{display:block;width:100%;margin-top:7px;padding:12px;border-radius:12px;border:1px solid var(--line);background:#251b2b;color:var(--fg);font:inherit}dialog{width:min(900px,94vw);max-height:90vh;overflow:auto;background:#211925;color:var(--fg);border:1px solid #705468;border-radius:20px;padding:24px}dialog::backdrop{background:#08060bd9}.dialog-head{display:flex;align-items:center;justify-content:space-between;gap:20px}.dialog-head h2{font:normal 30px Georgia,serif;margin:0 0 16px}.dialog-head button{font:inherit;padding:10px;border:0;background:transparent;color:var(--fg)}#card-preview{width:100%;height:auto;border-radius:8px;display:block}.card-fields{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin:20px 0}.card-fields label{font-size:16px}.card-fields textarea,.card-fields input{display:block;width:100%;padding:12px;font:inherit;color:var(--fg);background:#151018;border:1px solid #705468;border-radius:8px;margin-top:8px}.card-fields textarea{resize:vertical}#card-status{font-size:16px;margin-bottom:0}@media(max-width:650px){.card-fields{grid-template-columns:1fr}dialog{padding:16px}}
+</style></head><body><header><div class="brand"><span>✳</span>bloom</div><span class="creator-credit">By RKH</span></header><main><section class="intro"><h1>Open your hand.<br> <em>Let it bloom.</em></h1><p class="description">Open to bloom. Close to begin again.</p><button class="primary" id="camera">Enable camera ↗</button><p class="privacy">Your camera stays private.</p><p id="message" role="status" aria-live="polite"></p><div class="preview" id="preview" hidden><video id="video" autoplay playsinline muted></video><canvas id="skeleton" width="320" height="240"></canvas></div><button class="preview-toggle" id="preview-toggle" hidden>Hide camera preview</button><div class="flower-options"><label for="flower-choice">Flower<select id="flower-choice"><option value="rose">Rose</option><option value="lotus">Lotus</option><option value="daisy">Daisy</option></select></label><label>Colour<button id="colour" type="button">Rose ↻</button></label></div><div class="manual"><label for="openness">Explore the bloom <output id="percentage">65%</output></label><input id="openness" type="range" min="0" max="100" value="65" aria-label="Flower openness"><div class="endpoints"><span>Closed</span><span>Open</span></div></div></section><section class="stage" aria-label="Interactive flower"><div class="stage-top"><span class="status"><i class="dot" id="dot"></i><span id="tracking">Manual exploration</span></span></div><canvas id="flower" role="img" aria-label="A sculptural pink flower that opens and closes with your hand or the slider"></canvas><div class="stage-bottom" id="caption"></div><button id="save-postcard" class="save-postcard">Make a postcard ↗</button><span id="save-status" class="save-status" role="status" aria-live="polite"></span></section></main><footer><details><summary>Camera help</summary><p>Keep one hand in view, palm facing the camera. Open all four fingers to bloom; curl them into a loose fist to close. Use the Colour button to change colour. Fully open your hand for a pollen burst. Use a well-lit room. If your hand leaves the frame, the flower holds its last position.</p><p>Moving the slider stops the camera and returns to manual control. Camera mode needs internet to download Google's MediaPipe tracking software and model. After loading, hand detection runs locally. No microphone access is requested.</p><p>Download this file and open it in Chrome or Edge. If your browser blocks camera access from a local file, use the local launcher included in the ZIP. The slider works without a camera or internet.</p><p>Tracking powered by <a href="https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker/web_js" target="_blank" rel="noreferrer">Google MediaPipe</a>. This is an interactive artwork, not a botanical simulation.</p></details></footer>
+<dialog id="postcard-dialog" aria-labelledby="postcard-title"><div class="dialog-head"><h2 id="postcard-title">A bloom for someone.</h2><button id="close-card" aria-label="Close postcard editor">Close</button></div><canvas id="card-preview" width="1600" height="1200" role="img" aria-label="Preview of your personalised flower postcard"></canvas><div class="card-fields"><label for="card-message">Your message<textarea id="card-message" maxlength="120" rows="3">A little bloom, just for you.</textarea></label><label for="card-from">From (optional)<input id="card-from" maxlength="32" placeholder="Your name"></label></div><button id="download-card" class="primary">Download postcard</button><p id="card-status" role="status" aria-live="polite"></p></dialog><script>
+'use strict';
+const $=id=>document.getElementById(id),canvas=$('flower'),ctx=canvas.getContext('2d'),video=$('video'),sk=$('skeleton').getContext('2d');
+const clamp=(n,a=0,b=1)=>Math.max(a,Math.min(b,n));
+const flowers={rose:{layers:4,count:9,length:155,width:48,spread:1.38,cup:38,shape:.55},lotus:{layers:3,count:8,length:185,width:40,spread:1.5,cup:22,shape:1.05},daisy:{layers:1,count:20,length:172,width:15,spread:1.68,cup:5,shape:.48}};
+const palettes=[{name:'Rose',h:337,s:53},{name:'Violet',h:276,s:48},{name:'Gold',h:38,s:72},{name:'Ivory',h:38,s:16}];
+let flowerType='rose',paletteIndex=0,burstArmed=true,particles=[];
+function nextColour(){paletteIndex=(paletteIndex+1)%palettes.length;$('colour').textContent=palettes[paletteIndex].name+' ↻';}
+function emitPollen(){if(reduced)return;for(let i=0;i<60;i++){const a=Math.random()*Math.PI*2,speed=25+Math.random()*65;particles.push({x:0,y:-15,vx:Math.cos(a)*speed,vy:Math.sin(a)*speed-40,life:0,duration:1.5+Math.random()*2});}}
+let target=.65,bloom=.65,width=0,height=0,scale=1,stream=null,detector=null,active=false,loading=false,session=0,lastVideo=-1,lastDetection=0,lastFrame=0,clock=0;
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function resize(){const box=canvas.parentElement.getBoundingClientRect();width=box.width;height=box.height;const dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);scale=Math.min(width/570,height/610);}
+new ResizeObserver(resize).observe(canvas.parentElement);resize();
+function project(x,y,z){const yaw=.15;const xx=x*Math.cos(yaw)+z*Math.sin(yaw),zz=z*Math.cos(yaw)-x*Math.sin(yaw);return {x:width*.5+xx*scale,y:height*.49+(-y*.83+zz*.56)*scale,depth:zz*.83+y*.56};}
+function petal(t,u,phi,layer,open){
+ if(flowerType==='rose'){
+  // Concentric shells share a monotonic height profile. Their radial
+  // separation stays positive at every height, including during opening.
+  const theta=.12+open*1.38;
+  const radial=12+(3-layer)*7+Math.sin(theta)*(155-layer*26)*t;
+  const y=Math.cos(theta)*155*t+12*t;
+  // Each petal stays inside its own angular sector, preventing adjacent
+  // surfaces from crossing. Fade width gently towards base and tip.
+  const halfAngle=(Math.PI/flowers.rose.count)*.94*Math.pow(Math.sin(Math.PI*t),.55);
+  const angle=phi+u*halfAngle;
+  return project(radial*Math.cos(angle),y,radial*Math.sin(angle));
+ }
+const f=flowers[flowerType],length=f.length-layer*24,theta=.12+open*(f.spread-layer*.19);const radial=9+Math.sin(theta)*length*t;const sideways=u*(f.width-layer*4)*Math.pow(Math.sin(Math.PI*t),f.shape)*(.34+.66*open);const y=Math.cos(theta)*length*t+Math.sin(Math.PI*t)*(f.cup+14*open)-open*Math.pow(t,4)*20+u*u*13*Math.sin(Math.PI*t);return project(radial*Math.cos(phi)-sideways*Math.sin(phi),y+layer*4,radial*Math.sin(phi)+sideways*Math.cos(phi));}
+function draw(now){const dt=Math.min((now-lastFrame)/1000||.016,.06);lastFrame=now;clock+=dt;bloom+=(target-bloom)*(1-Math.exp(-dt*7));ctx.clearRect(0,0,width,height);
+ctx.save();const center=project(0,0,0);
+const glow=ctx.createRadialGradient(center.x,center.y-35*scale,0,center.x,center.y-35*scale,240*scale);glow.addColorStop(0,`rgba(179,80,120,${.035+bloom*.08})`);glow.addColorStop(1,'rgba(60,20,60,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,width,height);
+// The stem and petal surfaces are the animated object itself.
+ctx.beginPath();ctx.moveTo(center.x,center.y);ctx.bezierCurveTo(center.x-9*scale,center.y+90*scale,center.x+20*scale,center.y+145*scale,center.x-9*scale,center.y+225*scale);const stem=ctx.createLinearGradient(center.x-5,0,center.x+6,0);stem.addColorStop(0,'#263c39');stem.addColorStop(.5,'#6e9280');stem.addColorStop(1,'#293c37');ctx.strokeStyle=stem;ctx.lineWidth=5*scale;ctx.stroke();
+ctx.beginPath();ctx.moveTo(center.x+5*scale,center.y+135*scale);ctx.bezierCurveTo(center.x+23*scale,center.y+86*scale,center.x+70*scale,center.y+94*scale,center.x+84*scale,center.y+69*scale);ctx.bezierCurveTo(center.x+72*scale,center.y+127*scale,center.x+25*scale,center.y+145*scale,center.x+5*scale,center.y+135*scale);ctx.fillStyle='#334e43';ctx.fill();ctx.beginPath();ctx.moveTo(center.x+6*scale,center.y+135*scale);ctx.quadraticCurveTo(center.x+43*scale,center.y+111*scale,center.x+84*scale,center.y+69*scale);ctx.strokeStyle='#6e897355';ctx.lineWidth=1;ctx.stroke();
+const faces=[];for(let layer=0;layer<flowers[flowerType].layers;layer++){const count=flowers[flowerType].count;for(let i=0;i<count;i++){const phi=i/count*Math.PI*2+layer*.39+(reduced?0:Math.sin(clock*.22)*.018);const open=flowerType==='rose'?bloom:clamp((bloom-layer*.09)/(1-layer*.09));for(let t=0;t<14;t++)for(let u=0;u<5;u++){const a=petal(t/14,u/5*2-1,phi,layer,open),b=petal((t+1)/14,u/5*2-1,phi,layer,open),c=petal((t+1)/14,(u+1)/5*2-1,phi,layer,open),d=petal(t/14,(u+1)/5*2-1,phi,layer,open);const tip=t/14,edge=Math.abs((u+.5)/5*2-1),light=(paletteIndex===3?62:35)+tip*25+edge*7+Math.sin(phi-.5)*7+layer*2;faces.push({p:[a,b,c,d],z:(a.depth+b.depth+c.depth+d.depth)/4,color:`hsl(${palettes[paletteIndex].h+layer*4+tip*6} ${palettes[paletteIndex].s}% ${light}%)`});}}}
+faces.sort((a,b)=>a.z-b.z);for(const f of faces){ctx.beginPath();ctx.moveTo(f.p[0].x,f.p[0].y);for(let j=1;j<4;j++)ctx.lineTo(f.p[j].x,f.p[j].y);ctx.closePath();ctx.fillStyle=f.color;ctx.fill();ctx.strokeStyle=f.color;ctx.lineWidth=.55;ctx.stroke();}
+if(bloom>.6){ctx.globalAlpha=(bloom-.6)/.4;for(let i=0;i<65;i++){const a=i*2.39996,r=Math.sqrt(i/65)*(flowerType==='daisy'?31:22)*bloom;const p=project(Math.cos(a)*r,8+Math.sin(i)*3,Math.sin(a)*r);ctx.beginPath();ctx.arc(p.x,p.y,(1.4+(i%3)*.4)*scale,0,Math.PI*2);ctx.fillStyle=i%3?'#edc998':'#b6825d';ctx.fill();}ctx.globalAlpha=1;}
+if(bloom<.65)burstArmed=true;
+if(bloom>.92&&burstArmed){emitPollen();burstArmed=false;}
+particles=particles.filter(p=>p.life<p.duration);
+for(const p of particles){p.life+=dt;p.x+=p.vx*dt;p.y+=p.vy*dt;p.vx*=Math.exp(-dt*.2);p.vy-=dt*5;const fade=Math.max(0,1-p.life/p.duration);ctx.beginPath();ctx.arc(center.x+p.x*scale,center.y+p.y*scale,(1+fade)*scale,0,7);ctx.fillStyle=`hsla(${palettes[paletteIndex].h} 80% 85% / ${fade*.8})`;ctx.fill();}
+ctx.restore();
+if(active&&video.readyState>=2&&now-lastDetection>75&&video.currentTime!==lastVideo){lastDetection=now;lastVideo=video.currentTime;try{const result=detector.detectForVideo(video,now);const hand=result.landmarks?.[0];if(hand){const points=result.worldLandmarks?.[0]||hand;target=openness(points);$('openness').value=Math.round(target*100);$('percentage').textContent=Math.round(target*100)+'%';setStatus('Hand detected',true);skeleton(hand);}else{setStatus('Show your hand',false);sk.clearRect(0,0,320,240);}}catch(e){stopCamera();$('message').textContent='Tracking stopped. Please try again or use the slider.';}}
+requestAnimationFrame(draw);}
+function openness(points){let sum=0;for(const [base,joint,tip] of [[5,6,8],[9,10,12],[13,14,16],[17,18,20]]){const a=points[base],b=points[joint],c=points[tip];const v=[a.x-b.x,a.y-b.y,(a.z||0)-(b.z||0)],w=[c.x-b.x,c.y-b.y,(c.z||0)-(b.z||0)];const cosine=(v[0]*w[0]+v[1]*w[1]+v[2]*w[2])/(Math.hypot(...v)*Math.hypot(...w)||1);const angle=Math.acos(clamp(cosine,-1,1))*180/Math.PI;sum+=clamp((angle-65)/100);}return clamp(sum/4);}
+function skeleton(points){sk.clearRect(0,0,320,240);sk.lineWidth=2;sk.strokeStyle='#edbfd7';for(const chain of [[0,1,2,3,4],[0,5,6,7,8],[5,9,10,11,12],[9,13,14,15,16],[13,17,18,19,20],[0,17]]){sk.beginPath();chain.forEach((i,j)=>{const p=points[i];if(j)sk.lineTo(p.x*320,p.y*240);else sk.moveTo(p.x*320,p.y*240);});sk.stroke();}sk.fillStyle='#fff0f5';for(const p of points){sk.beginPath();sk.arc(p.x*320,p.y*240,2.4,0,7);sk.fill();}}
+function setStatus(text,on){if($('tracking').textContent!==text)$('tracking').textContent=text;$('dot').classList.toggle('on',on);}
+function stopCamera(){session++;active=false;loading=false;if(stream)stream.getTracks().forEach(t=>t.stop());stream=null;video.srcObject=null;$('camera').textContent='Enable camera ↗';$('preview').hidden=true;$('preview-toggle').hidden=true;setStatus('Manual exploration',false);$('caption').textContent='';}
+let modelLoading=null;
+async function loadTracker(){
+ if(detector)return detector;
+ if(modelLoading)return modelLoading;
+ modelLoading=(async()=>{
+  let lastError;
+  for(const root of ['https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.21','https://unpkg.com/@mediapipe/tasks-vision@0.10.21']){
+   try{
+    const module=await import(root+'/vision_bundle.mjs');
+    const files=await module.FilesetResolver.forVisionTasks(root+'/wasm');
+    return await module.HandLandmarker.createFromOptions(files,{baseOptions:{modelAssetPath:'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task'},runningMode:'VIDEO',numHands:1,minHandDetectionConfidence:.55,minHandPresenceConfidence:.55,minTrackingConfidence:.55});
+   }catch(e){lastError=e;}
+  }
+  throw lastError;
+ })();
+ try{detector=await modelLoading;return detector;}finally{modelLoading=null;}
+}
+async function startCamera(){
+ if(active||loading){stopCamera();$('message').textContent='Camera off.';return;}
+ const ticket=++session;loading=true;let stage='camera';
+ $('camera').textContent='Cancel';$('message').textContent='Allow camera access in the browser prompt.';setStatus('Starting camera',false);
+ try{
+  if(!navigator.mediaDevices?.getUserMedia)throw new Error('UNSUPPORTED');
+  const media=await navigator.mediaDevices.getUserMedia({video:{width:{ideal:640},height:{ideal:480},facingMode:'user'},audio:false});
+  if(ticket!==session){media.getTracks().forEach(t=>t.stop());return;}
+  stream=media;video.srcObject=media;await video.play();if(ticket!==session)return;
+  $('preview').hidden=false;$('preview-toggle').hidden=false;$('preview-toggle').textContent='Hide camera preview';
+  stage='model';$('message').textContent='Camera connected. Loading hand tracking…';setStatus('Loading tracking',false);
+  await loadTracker();if(ticket!==session)return;
+  active=true;loading=false;lastVideo=-1;$('camera').textContent='Turn camera off';$('message').textContent='Open to bloom. Use the Colour button to change colour.';setStatus('Show your hand',false);
+  media.getVideoTracks()[0].addEventListener('ended',()=>{if(active){stopCamera();$('message').textContent='Camera disconnected. Enable it to reconnect.';}});
+ }catch(e){
+  if(ticket!==session)return;stopCamera();
+  const errors={NotAllowedError:'Camera access is blocked. Allow Camera in the browser’s site settings, then retry.',NotFoundError:'No camera was found. Connect a webcam and retry.',NotReadableError:'Camera is busy. Close other camera apps and retry.',SecurityError:'The browser blocked camera access. Use the included local launcher.'};
+  $('message').textContent=errors[e.name]||(e.message==='UNSUPPORTED'?'This browser cannot access the camera here. Open in Chrome or Edge, or use Start-Bloom.py.':stage==='model'?'Your camera connected, but the tracking download failed. Retry, or use the local launcher. Error: '+String(e.message||e).slice(0,180):'Could not start the camera: '+String(e.message||e).slice(0,180));
+  setStatus(stage==='model'?'Tracking unavailable':'Camera unavailable',false);
+ }
+}
+function paintCard(picture){
+ const art=picture.getContext('2d');picture.width=1600;picture.height=1200;
+ art.fillStyle='#17111e';art.fillRect(0,0,800,1200);art.fillStyle='#f6efe6';art.fillRect(800,0,800,1200);
+ const fit=Math.min(760/canvas.width,1040/canvas.height),w=canvas.width*fit,h=canvas.height*fit;
+ art.drawImage(canvas,(800-w)/2,60+(1040-h)/2,w,h);
+ art.textAlign='left';art.fillStyle='#453143';art.font='18px system-ui, sans-serif';art.fillText('A LITTLE SOMETHING, JUST FOR YOU',885,175);
+ const text=$('card-message').value.trim()||'A little bloom, just for you.';art.font='48px Georgia, serif';
+ const lines=[];let line='';for(const char of Array.from(text.replace(/\s+/g,' '))){if(art.measureText(line+char).width>615){lines.push(line.trim());line=char;}else line+=char;}if(line)lines.push(line.trim());
+ const start=430-Math.min(lines.length,8)*12;lines.slice(0,8).forEach((line,i)=>art.fillText(line,885,start+i*65));
+ const from=$('card-from').value.trim();if(from){art.font='26px Georgia, serif';art.fillText('From '+from,885,960,615);}
+ art.fillStyle='#8a6f82';art.font='20px system-ui, sans-serif';art.fillText('Bloom by RKH',885,1090);
+ art.fillStyle='#e6afc6';art.textAlign='center';art.font='italic 42px Georgia, serif';art.fillText('bloom',400,1125);
+}
+function refreshCard(){paintCard($('card-preview'));}
+function savePostcard(){
+ const button=$('download-card');button.disabled=true;$('card-status').textContent='Preparing…';
+ try{const picture=document.createElement('canvas');paintCard(picture);picture.toBlob(blob=>{
+ button.disabled=false;if(!blob){$('card-status').textContent='Could not export. Please retry.';return;}
+ const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='Bloom-by-RKH-postcard.png';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);$('card-status').textContent='Ready. Check your downloads.';
+ },'image/png');}catch(e){button.disabled=false;$('card-status').textContent='Could not export. Please retry.';}
+}
+$('save-postcard').addEventListener('click',()=>{refreshCard();$('postcard-dialog').showModal();});
+$('close-card').addEventListener('click',()=>$('postcard-dialog').close());
+$('download-card').addEventListener('click',savePostcard);
+$('card-message').addEventListener('input',refreshCard);$('card-from').addEventListener('input',refreshCard);
+$('colour').addEventListener('click',nextColour);
+$('flower-choice').addEventListener('change',e=>{flowerType=e.target.value;particles=[];});
+$('camera').addEventListener('click',startCamera);$('openness').addEventListener('input',e=>{if(active||loading)stopCamera();target=Number(e.target.value)/100;$('percentage').textContent=e.target.value+'%';$('message').textContent='';});$('preview-toggle').addEventListener('click',()=>{$('preview').hidden=!$('preview').hidden;$('preview-toggle').textContent=$('preview').hidden?'Show camera preview':'Hide camera preview';});window.addEventListener('pagehide',()=>{stopCamera();detector?.close();detector=null;});document.addEventListener('visibilitychange',()=>{if(document.hidden&&active){stopCamera();$('message').textContent='Camera paused while you were away. Enable it to continue.';}});requestAnimationFrame(draw);
+</script></body></html>
